@@ -1,41 +1,82 @@
-# Teste Fullstack: Aplicativo de Gerenciamento de Clientes
+# Uol-teste
 
-## Descrição:
+REST service that supports the management of a client database developed with Golang and UI service with React.
 
-Neste desafio, você deverá desenvolver um aplicativo fullstack que permita aos usuários visualizar e criar clientes. O aplicativo consiste em duas partes: o frontend e o backend. O frontend será responsável pela interface do usuário e a comunicação com a API. O backend será responsável pelo armazenamento e gerenciamento dos dados dos clientes.
+## 💻 Backend Required
 
-## Requisitos do Frontend:
+* go version 1.20
 
-1. Exibir uma listagem de clientes contendo todas as informações conforme o layout fornecido.
-2. Permitir a criação de um novo cliente através de um formulário.
-3. Na tela de edição, fornecer alertas para o usuário em caso de dados inválidos.
-4. Realizar validação de CPF e telefone na tela de edição para garantir dados corretos e consistentes.
-5. Comunicar-se com a API para obter os dados dos clientes cadastrados.
+## 🚀 Installing Client Manager
 
-## Requisitos do Backend:
+To install the Client Manager, follow the steps:
 
-Criar uma API que ofereça endpoints para:
+Linux, MacOS e Windows:
+```
+go mod tidy
+```
 
-1. Obter a listagem de clientes cadastrados.
-2. Cadastrar um novo cliente com informações válidas.
-3. Atualizar informações de cliente existente.
-4. Armazenar os dados do cliente de forma persistente, com sugestão de uso do SQLite para essa finalidade.
+## ☕ Using Client Manager by build file
+On MacOs or Linux:
+```
+./main
+```
+On Windows:
+```
+./main
+```
 
-## Requisitos de Qualidade de Código:
+## ☕ Using Client Manager
 
-Escreva um código limpo, legível e bem organizado.
-Adote boas práticas de desenvolvimento e arquitetura.
+To use Client Manager, follow the steps:
 
-## Itens Desejáveis (opcional):
+Run the rest server
+```
+make run
+```
 
-- Testes unitários
-- Bibliotecas ou frameworks adicionais
+Now it is possible access the application by the port 8080, follow the exemple to list all clients:
+ ```
+localhost:8080/clients
+ ```
 
-## Telas:
+## ☕ Testing Client Manager
 
-- [Tela Inicial](https://test-frontend-uolpp.web.app/assets/images/tela-inicial.jpg)
-- [Tela de Edição](https://test-frontend-uolpp.web.app/assets/images/tela-edicao.jpg)
+To run all the unit tests, follow the step:
 
-## Instruções Finais:
+```
+make test
+```
+## 💻 Frontend Required
 
-Após concluir o desafio, crie um pull request neste repositório com duas pastas separadas: uma contendo o projeto frontend e outra com o projeto backend, para que possamos avaliar seu trabalho. Boa sorte!
+* Node and npm
+
+## 🚀 Installing Client Manager UI
+
+To install the Client Manager UI, follow the steps:
+
+Linux, MacOS e Windows:
+```
+npm i
+```
+
+## ☕ Using Client Manager UI by build file
+Linux, MacOS e Windows:
+```
+npm run build
+```
+
+## ☕ Using Client Manager UI
+
+To use Client Manager UI, follow the steps:
+
+Run the rest server
+```
+npm run dev:host
+```
+
+Now it is possible access the application by the port 3090, follow the exemple:
+ ```
+localhost:3090/cliente
+ ```
+
+[⬆ back to top](#Client Manager)<br>
